@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () =>{
     return (
-        <h1>Amazing app</h1>
+        <h1>Welcome to dictionary!</h1>
     )
 }
 

@@ -1,6 +1,8 @@
 import {combineReducers} from "redux";
-import {todoReducer} from "./todoReducer";
+import {cardReducer} from "./cardReducer";
+import {chooseReducer} from "./chooseReducer";
 
 export const rootReducer = combineReducers({
-    todo: todoReducer
+    card: cardReducer,
+    choose: chooseReducer
 });

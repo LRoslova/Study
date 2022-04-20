@@ -1,15 +1,24 @@
-import {DELETE_TODO} from "./types";
-import {ADD_TODO} from "./types";
+import {ADD_ITEM} from "./types";
+import {UPDATE_CARD} from "./types";
+import {DELETE_ITEM} from "./types";
 
-export const deleteHandler = (id)=> {
+export const addHandler = (item)=> {
     return{
-        type: DELETE_TODO,
-        payload: id
+        type: ADD_ITEM,
+        payload: item
     }
 }
-export const addHandler = ()=> {
+
+export const deleteHandler = (word)=> {
     return{
-        type: ADD_TODO,
-        payload: id
+        type: DELETE_ITEM,
+        payload: word
+    }
+}
+
+export const updateHandler = (item)=>{
+    return{
+        type: UPDATE_CARD,
+        payload: item
     }
 }
